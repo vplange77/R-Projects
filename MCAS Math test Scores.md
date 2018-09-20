@@ -39,6 +39,7 @@ Making reference to the “No Child Left Behind Act” authorized by the Departm
 with our aim of supporting these districts in an effort to solve the education inequalities, we developed
 research questions below which could help us achieve this:
 What are the factors that impact student MCAS scores?
+
 We also came up with two sub questions:
 1. How does funding impact students’ MCAS math scores?
 2. Is there any correlation between Math scores and other variables of interest?
