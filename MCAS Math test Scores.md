@@ -106,7 +106,7 @@ The result from our logistic regression model shows that location has a statisti
 relation with Math performance followed by funding. As we can see in Fig 8, gender is not a very
 significant factor for predicting students’ performance.
 
-![screen shot 2018-09-20 at 3 39 51 pm](https://user-images.githubusercontent.com/31625655/45843010-5ccc5980-bcec-11e8-8603-c918345b4874.png)
+![screen shot 2018-09-20 at 3 40 12 pm](https://user-images.githubusercontent.com/31625655/45843446-a9646480-bced-11e8-92a7-ea45a4625012.png)
 
 Fig 8
 
@@ -118,6 +118,7 @@ the MCAS Math test. From Fig 9, we can see that rural districts have 12.71 times
 odds of passing the MCAS Math test, whereas, urban districts have 0.079 or 8% lesser odds of
 passing the MCAS Math test.
 
+![screen shot 2018-09-20 at 3 40 20 pm](https://user-images.githubusercontent.com/31625655/45843508-d57fe580-bced-11e8-85a1-60d83768c470.png)
 
 Fig 9
 
@@ -127,6 +128,7 @@ concordance, sensitivity, and specificity to evaluate the performance of our log
 model. As shown in Fig 10, a vif < 2 (also less than the threshold of 5) indicates that there is little
 to no collinearity between the independent variables.
 
+![screen shot 2018-09-20 at 3 40 28 pm](https://user-images.githubusercontent.com/31625655/45843535-e3ce0180-bced-11e8-8d7b-8debcd6b036e.png)
 
 Fig 10
 
@@ -137,12 +139,18 @@ predicted as 0s by the model) as seen in Fig 11. Overall, our model performs ver
 when predicting which districts have higher likelihood for success on the MCAS Math test,
 however, the model did not perform well when it comes to predicting failures. To improve our
 model, we can try to reduce the amount of false negatives (i.e fails classified as passes) by
-
 applying a cost matrix where false negatives are weighted more heavily than false positives,
 especially if predicting failures is paramount.
+
+![screen shot 2018-09-20 at 3 40 34 pm](https://user-images.githubusercontent.com/31625655/45843554-ed576980-bced-11e8-9982-2eaa8efd23aa.png)
+
 Fig 11
+
 In addition, an Area Under ROC Curve of 89% suggests that our model is a good model and has
 good prediction capability.
+
+![screen shot 2018-09-20 at 3 40 38 pm](https://user-images.githubusercontent.com/31625655/45843564-f47e7780-bced-11e8-98ef-3c0548d36d8c.png)
+
 Fig 12
 
 
@@ -153,4 +161,6 @@ and district location (urban/rural), does indeed impact MCAS Math test results. 
 Massachusetts Department of Education can begin to identify gaps based on district funding, minority
 groups, location (urban/rural), and work towards resolving this problem of inequality in Massachusetts’
 education system.
+
+Contributors: Lingdon Pan, Gift Ameh
 
