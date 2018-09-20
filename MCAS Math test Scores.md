@@ -32,6 +32,8 @@ Our dataset was retrieved from Boston Public Schools Office of Data and Accounta
 contains 28 variables including continuous and categorical variables. We chose 11 variables of interest to
 determine if there was any correlation that existed between the variables and MCAS math scores.
 
+![screen shot 2018-09-20 at 3 09 28 pm](https://user-images.githubusercontent.com/31625655/45841284-4ec80a00-bce7-11e8-8abe-504e60ecf08d.png)
+
 For further regression training, we also converted some continuous variables to categorical.
 
 ## Research Questions
