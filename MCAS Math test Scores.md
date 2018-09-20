@@ -35,7 +35,10 @@ Fig 3
 From the plot in Fig 3, we can tell that there exists a positively linear relationship between “mathscore”
 and “average salary”.
 
+![screen shot 2018-09-20 at 3 39 42 pm](https://user-images.githubusercontent.com/31625655/45842947-2b538e00-bcec-11e8-9ace-620c1714bef4.png)
+
 Fig 4
+
 Fig 4 tells us that mathscore and percentage of minority have a negatively linear relationship. Thus, we
 determined that funding does have an effect on MCAS math scores, and we would like to know whether
 the impact is significant.
@@ -74,12 +77,17 @@ The adjusted R^2 in our final model means that 76% of the variation in math scor
 the variation in the predictor variables suggested by the stepAIC model below:
 Final Model: mathscore ~ pct_minority + pct_fouryear + avg_salary
 
+![screen shot 2018-09-20 at 3 39 51 pm](https://user-images.githubusercontent.com/31625655/45843010-5ccc5980-bcec-11e8-8603-c918345b4874.png)
+
 Fig 5
+
 To evaluate the performance of the final model, we randomly split the dataset into training (70%)
 and testing (30%) datasets. Then we predicted math scores using the test dataset. Model results in
 Fig 6 shows an R
 2 of 70%, and a low RMSE of 3.89 which suggests that our model is a good
 model. We believe that the model may perform better with a larger sample size.
+
+![screen shot 2018-09-20 at 3 40 01 pm](https://user-images.githubusercontent.com/31625655/45843019-65249480-bcec-11e8-8aa6-21ecca3cd40c.png)
 Fig 6
 
 III. Logistic Regression
@@ -90,25 +98,38 @@ urban) both impact the likelihood of a student passing the MCAS Math test. Since
 dependent variable is binary (i.e pass/fail), we decided to apply logistic regression. We split the
 data into 80% training and 20% testing datasets. The proportion of the class in both training and
 testing datasets is shown in Fig 7.
+
+![screen shot 2018-09-20 at 3 40 07 pm](https://user-images.githubusercontent.com/31625655/45843026-6d7ccf80-bcec-11e8-98ad-301d0a039c0f.png)
 Fig 7
+
 The result from our logistic regression model shows that location has a statistically significant
 relation with Math performance followed by funding. As we can see in Fig 8, gender is not a very
 significant factor for predicting students’ performance.
+
+![screen shot 2018-09-20 at 3 39 51 pm](https://user-images.githubusercontent.com/31625655/45843010-5ccc5980-bcec-11e8-8603-c918345b4874.png)
+
 Fig 8
+
 Based on the above result in Fig 8, we were also curious to know the odds ratio of students in
 urban vs. rural districts passing the MCAS Math test. We created a new model with y (pass/fail)
-
 as dependent variable, and location (urban/rural) as the independent variable. To calculate the
 odds ratio, we first calculated the odds that a student from urban/rural school district would pass
 the MCAS Math test. From Fig 9, we can see that rural districts have 12.71 times or 71% greater
 odds of passing the MCAS Math test, whereas, urban districts have 0.079 or 8% lesser odds of
 passing the MCAS Math test.
+
+
 Fig 9
+
+
 We applied various metrics such as variance inflation factor (vif), misclassification error rate,
 concordance, sensitivity, and specificity to evaluate the performance of our logistic regression
 model. As shown in Fig 10, a vif < 2 (also less than the threshold of 5) indicates that there is little
 to no collinearity between the independent variables.
+
+
 Fig 10
+
 Furthermore, a misclassification error rate of 4% and concordance (i.e pairs whose actual 1s is
 greater than actual 0s) of 83% suggests that our model is a good quality model. We obtained a
 100% sensitivity (i.e actual 1s predicted as 1s by the model) and 33% specificity (i.e actual 0s
