@@ -5,7 +5,13 @@ determine if there was any correlation that existed between the variables and MC
 
 ![screen shot 2018-09-20 at 3 09 28 pm](https://user-images.githubusercontent.com/31625655/45841284-4ec80a00-bce7-11e8-8abe-504e60ecf08d.png)
 
+Fig.1
+
 For further regression training, we also converted some continuous variables to categorical.
+
+![screen shot 2018-09-20 at 3 38 25 pm](https://user-images.githubusercontent.com/31625655/45842649-4ffb3600-bceb-11e8-8cfd-3bc15b6ba6c7.png)
+
+Fig.2
 
 ## Research Questions
 Making reference to the “No Child Left Behind Act” authorized by the Department of Education, and
@@ -21,9 +27,14 @@ We also came up with two sub questions:
 ## Exploratory Analysis
 For our analysis, we began by exploring the dataset. We created scatter plots to visualize the data to
 decide what methodology to use, and to see if we can observe patterns in the dataset.
+
+![screen shot 2018-09-20 at 3 39 32 pm](https://user-images.githubusercontent.com/31625655/45842752-9ea8d000-bceb-11e8-929b-cabbe6370502.png)
+
 Fig 3
+
 From the plot in Fig 3, we can tell that there exists a positively linear relationship between “mathscore”
 and “average salary”.
+
 Fig 4
 Fig 4 tells us that mathscore and percentage of minority have a negatively linear relationship. Thus, we
 determined that funding does have an effect on MCAS math scores, and we would like to know whether
